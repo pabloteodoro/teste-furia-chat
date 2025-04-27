@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PrimaryButton from "@/components/PrimaryButton";
+import ChatbotWidget from "@/components/ChatBotWidget"; // Importe o ChatbotWidget
 
 export default function LandingPage() {
   return (
@@ -22,6 +23,9 @@ export default function LandingPage() {
           </PrimaryButton>
         </Link>
       </div>
+      
+      {/* Adiciona o widget do chatbot */}
+      <ChatbotWidget />
     </div>
   );
 }
