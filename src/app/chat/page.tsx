@@ -6,6 +6,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import PrimaryButton from "@/components/PrimaryButton";
 import UpcomingMatches from "@/components/UpComingMatches";
+import ChatBot from "@/components/ChatBot"
 
 export default function ChatPage() {
   const { user, loading } = useAuth();
@@ -38,6 +39,7 @@ export default function ChatPage() {
       <main className="w-full flex flex-col items-center space-y-6">
         <h2 className="text-2xl font-semibold">Próximos Jogos</h2>
         <UpcomingMatches />
+        <ChatBot /> 
       </main>
 
       <footer className="w-full text-center mt-6 text-gray-400">
